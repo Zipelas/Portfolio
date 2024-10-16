@@ -1,0 +1,81 @@
+h1 {
+  background-color: olive;
+  font-size: 30px;
+  color: #f2f2f2;
+}
+
+h2 {
+  background-color: #3498db;
+  font-size: 24px;
+  color: #222222;
+}
+
+h3 {
+  background-color: #222222;
+  font-size: 22px;
+  color: #f2f2f2;
+}
+
+p {
+  background-color: #3498db;
+  font-size: 18px;
+  color: #222222;
+}
+
+.links a {
+  text-decoration: none;
+}
+.links a:link {
+  color: #222222;
+  font-size: 22px;
+}
+.links a:visited {
+  color: #222222;
+  font-size: 22px;
+}
+.links a:active {
+  color: olive;
+  font-size: 22px;
+}
+.links a:hover {
+  color: #f2f2f2;
+  text-decoration: underline;
+  background-color: #222222;
+}
+
+.dropdown-content {
+  background-color: #222222;
+}
+.dropdown-content a {
+  text-decoration: none;
+  color: #f2f2f2;
+  font-size: 22px;
+}
+.dropdown-content a:visited {
+  color: #f2f2f2;
+}
+.dropdown-content a:active {
+  text-decoration: underline;
+}
+
+body.dark-mode {
+  background-color: #222222;
+  color: #f2f2f2;
+}
+body.dark-mode a {
+  text-decoration: none;
+  color: #f2f2f2;
+  font-size: 22px;
+}
+body.dark-mode a:visited {
+  color: #f2f2f2;
+}
+body.dark-mode a:active {
+  color: #f2f2f2;
+  text-decoration: underline;
+}
+body.dark-mode a:hover {
+  color: #222222;
+  text-decoration: underline;
+  background-color: #f2f2f2;
+}/*# sourceMappingURL=base.css.map */

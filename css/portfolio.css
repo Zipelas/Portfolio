@@ -1,0 +1,38 @@
+.container-portfolio-main {
+
+    border: 2px solid black;
+    border-radius: 15px;
+    height: 400px;
+}
+
+.portfolio-header {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: 10px auto;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 0px 10px 10px 10px;
+}
+
+.portfolio-sect {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: 10px auto;
+    border-radius: 15px;
+}
+
+.portfolio-art {
+    border-radius: 15px;
+}
+.portfolio-div {
+    border-radius: 15px;
+}
+
+.portfolio-img {
+    border-radius: 15px;
+    height: 300px;
+    width: auto;
+}

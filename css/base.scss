@@ -1,0 +1,157 @@
+$font_text_xl: 30px;
+$font_text_large: 24px;
+$font_text_medium: 22px;
+$font_text_small: 18px;
+$font_color_white: #f2f2f2;
+$font_color_black: #222222;
+$bkgr_color_white: #f2f2f2;
+$bkgr_color_black: #222222;
+$bkgr_color_olive: olive;
+$bkgr_color_blue: #3498db;
+
+// fungerar skitbra :-)
+h1 {
+    background-color: $bkgr_color_olive;
+    font-size: $font_text_xl;
+    color: $font_color_white;
+}
+
+h2 {
+    background-color: $bkgr_color_blue;
+    font-size: $font_text_large;
+    color: $font_color_black;
+}
+
+h3 {
+    background-color: $bkgr_color_black;
+    font-size: $font_text_medium;
+    color: $font_color_white;
+}
+
+p {
+    background-color: $bkgr_color_blue;
+    font-size: $font_text_small;
+    color: $font_color_black;
+}
+
+.links {
+    a {
+        text-decoration: none;
+
+        &:link {
+            color: #222222;
+            font-size: $font_text_medium
+        }
+        
+        &:visited {
+            color: #222222;
+            font-size: $font_text_medium
+        }
+
+        &:active {
+            color: olive;
+            font-size: $font_text_medium
+        }
+
+        &:hover {
+            color: $font_color_white;
+            text-decoration: underline;
+            background-color: #222222;
+        }
+    }
+}
+
+.dropdown-content {
+    background-color: #222222;
+    a {
+        text-decoration: none;
+        color: #f2f2f2;
+        font-size: 22px;
+        
+        &:visited {
+            color: #f2f2f2;
+        }
+
+        &:active {
+            text-decoration: underline;
+        }
+    }
+}
+
+body.dark-mode {
+    background-color: #222222;
+    color: #f2f2f2;
+    a {
+        text-decoration: none;
+        color: #f2f2f2;
+        font-size: 22px;
+        
+        &:visited {
+            color: #f2f2f2;
+        }
+
+        &:active {
+            color: #f2f2f2;
+            text-decoration: underline;
+        }
+        &:hover {
+            color: #222222;
+            text-decoration: underline;
+            background-color: #f2f2f2;
+        }
+    }    
+}
+
+// @mixin toplight {
+//     color: $font_color_black;
+//     background-color: $bkgr_color_white;
+// }
+
+// .top {
+//     @include toplight();
+// }
+
+// @mixin topdark {
+//     color: $font_color_white;
+//     background-color: $bkgr_color_black;
+// }
+
+// .top {
+//     @include topdark();
+// }
+
+// @mixin middlelight {
+//     color: $font_color_black;
+//     background-color: $bkgr_color_white;
+// }
+
+// .middle {
+//     @include middlelight();
+// }
+
+// @mixin middledark {
+//     color: $font_color_white;
+//     background-color: $bkgr_color_black;
+// }
+
+// .middle {
+//     @include middledark();
+// }
+
+// @mixin bottomlight {
+//     color: $font_color_black;
+//     background-color: $bkgr_color_white;
+// }
+
+// .bottom {
+//     @include bottomlight();
+// }
+
+// @mixin bottomdark {
+//     color: $font_color_white;
+//     background-color: $bkgr_color_black;
+// }
+
+// .bottom {
+//     @include bottomdark();
+// }

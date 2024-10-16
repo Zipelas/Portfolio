@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="/js/main.js" defer></script>
+    <title>Startsida | Zipelas</title>
+</head>
+<body onload="myFunction()">
+    <div id="loader"></div>
+    <div style="display:none;" id="myDiv" class="animate-bottom"></div>
+    <header>
+        <nav class="navbar_1">
+            <div class="logo">
+                <a href="#"><img src="/assets/logo_header.png" width="110" height="88" alt="Zipelas - The best there is"></a>
+            </div>
+            <ul class="links">
+                <li><a href="#">Hem</a></li>
+                <li><a href="#">Om mig</a></li>
+                <li><a href="#">Arbeten</a></li>
+                <li><a href="#">CV</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+            <div class="dropdown">
+                <a href="javascript:void(0)" id="menu-icon" onclick="openHbMenu()" role="button" aria-expanded="false"
+                aria-label="meny">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <a href="javascript:void(0)" ><i class='menu-icon'></i></a>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Startsida</a>
+                    <a href="#">Om mig</a>
+                    <a href="#">Arbeten</a>
+                    <a href="#">CV</a>
+                    <a href="#">Kontakt</a>
+                </div>
+            </div>
+        </nav>        
+    </header>
+    <main>MAIN
+        <h1>H1</h1>
+        <h2>H2</h2>
+        <h3>H3</h3>
+        <p>Jag försöker att göra mixins för H!, H2, H3 och paragrafer.<br>
+        Med mina länkar har det skitit sig totalt. Lyckas att få länkfärg och hoverfärg med bakgrund.<br>
+        Länkfärgen kan jag dock inte sätta till röd textfärg. Jag ska försöka med mixin istället.</p>
+        <div class="dark_light_icon">
+            <img class="icon" src="/assets/icon/dark_light.png" onclick="toggleDarkLight()" alt="Växla mellan ljus och mörk bakgrund" height="20px" width="20px">
+        </div>
+    </main>
+    <footer class="bottom">FOOTER</footer>
+</body>
+</html>

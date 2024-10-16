@@ -1,0 +1,57 @@
+$background-color: olive;
+$fontH1: 28px;
+$fontH2: 24px;
+$fontH3: 20px;
+$fontH4: 16px;
+$color: white;
+$font-weight: bold;
+$border: 2px solid black;
+$border-radius: 15px;
+
+@mixin h1 {
+  font-size: $fontH1;
+  color: $color;
+  border: $border;
+  border-radius: $border-radius;
+  background-color: $background-color;
+}
+
+h1 {
+    @include h1;
+  }
+
+  @mixin h2 {
+    font-size: $fontH2;
+    color: $color;
+    border: $border;
+    border-radius: $border-radius;
+    background-color: $background-color;
+  }
+  
+  h2 {
+      @include h2;
+    }
+
+    @mixin h3 {
+      font-size: $fontH3;
+      color: $color;
+      border: $border;
+      border-radius: $border-radius;
+      background-color: $background-color;
+    }
+    
+    h3 {
+        @include h3;
+      }
+
+      @mixin h4 {
+        font-size: $fontH4;
+        color: $color;
+        border: $border;
+        border-radius: $border-radius;
+        background-color: $background-color;
+      }
+      
+      h4 {
+          @include h4;
+        }

@@ -1,0 +1,60 @@
+/* Close "X" ikon*/
+.x::before, .x::after {
+    content: "";
+    display: block;
+    margin-top: -3px;
+    width: 20px;
+    height: 3px;
+    background: #000;
+    border-radius: 1px;
+}
+
+.x::before {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+  
+.x::after {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/* HBmeny som blir till "X" Close*/
+a#menu-icon {
+    display: inline-block;
+    padding: 10px;
+}
+
+a#menu-icon .bar {
+    margin: 3px;
+    width: 25px;
+    height: 3px;
+    background: #000;
+    border-radius: 1.5px;
+    transition: margin 0.2s, transform 0.2s;
+}
+
+a#menu-icon:not(.close):hover {
+    padding: 6px 10px;
+}
+
+a#menu-icon:not(.close):hover .bar {
+    margin: 5px 3px;
+}
+
+a#menu-icon.close .bar:first-child {
+    -webkit-transform: translateY(6px) rotate(45deg);
+        -ms-transform: translateY(6px) rotate(45deg);
+            transform: translateY(6px) rotate(45deg);
+}
+
+a#menu-icon.close .bar:nth-child(2) {
+    opacity: 0;
+}
+
+a#menu-icon.close .bar:last-child {
+    -webkit-transform: translateY(-6px) rotate(-45deg);
+        -ms-transform: translateY(-6px) rotate(-45deg);
+            transform: translateY(-6px) rotate(-45deg);
+}

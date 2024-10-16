@@ -1,0 +1,364 @@
+@import url('/css/base.css');
+@import url('/css/burgermenu.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+nav {
+    position: fixed;
+}
+
+nav.navbar-1 {
+    height: 100px;
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    z-index: 10;
+}
+
+.navbar-1 ul {
+    display: flex;
+}
+
+.navbar-1 ul li {
+    list-style: none;
+    transition: 250ms;
+    text-decoration: none;
+    transition: 250ms;
+    padding: 10px;
+    color: black;
+}
+
+.navbar-1 ul li a , .nav-cont-item a {
+    text-decoration: none;
+    transition: 250ms;
+    color: black;
+}
+
+.navbar-1 ul li:hover, .container a:hover {
+    transform: translateY(-3px);
+}
+
+.navbar-1 li:hover, .container a:hover, .navbar-1 li a:hover, .Hbbtn:hover, .nav-cont-item a:hover {
+    color: red;
+    border-color: red;
+}
+
+.ol, ul {
+    padding-left: 0;
+}
+
+.logo {
+    margin-left: 40px;
+    position: absolute;
+    left: 0;
+}
+
+.nav-cont-item a {
+    font-size: 20px;
+}
+
+.misc {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 10px;
+}
+
+.misc a {
+    font-size: 16px;
+}
+
+.links li {
+    font-size: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.Hbbtn {
+    border: solid 1px black;
+    padding: 5px;
+    border-radius: 5px;
+    display: none !important;
+}
+
+.Hbbtn i {
+    font-size: 20px;
+}
+
+nav.navbar-2 {
+    height: 200px;
+    width: 100%;
+    top: 0;  
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(237, 233, 233);
+    z-index: 10;
+    margin-top: 100px;
+    display: none;
+}
+
+.nav-container {
+    margin: 80px;
+    text-transform: uppercase;
+}
+
+.nav-container a, .footer-containter a {
+    text-decoration: none;
+}
+
+.nav-cont-item {
+    list-style: none;
+    margin-top: 10px;
+    margin-left: 0 !important;
+}
+
+.show {
+    display: flex !important;
+}
+.active-menu {
+    display: flex !important;
+}
+.herr-meny, .Dam-meny, .barn-meny, .beauty-meny, .home-meny, .hb-meny {
+    display: none;
+}
+
+/* Här börjar login */
+.main-login {
+    margin-top: 200px;
+    display: flex;
+    margin-bottom: 250px;
+}
+/* Hej */
+.login {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 70px;
+}
+
+.login-inputs input {
+    font-size: 16px;
+    width: 90%;
+    margin-top: 30px;
+    padding: 10px;
+    border: none;
+    border-bottom: solid 1px black;
+}
+
+form h1, .need-acc h2 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.login a {
+    text-decoration: none;
+    color: #383232;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.btn {
+    margin-top: 30px;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border: solid 1px black;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+form {
+    width: 100%;
+}
+
+.need-acc {
+    width: 30%;
+    margin-left: 20px;
+}
+
+.btn:hover, .mini-container a:hover {
+    color: white;
+    background: rgba(0,0,0,0.5);
+}
+
+/* Här slutar login*/
+/* Här börjar Help*/
+.Help-page {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.Help-top-img {
+    display: flex;
+    position: relative;
+    margin-top: 100px;
+}
+
+.Help-top-img img {
+    width: 100%;
+    height: auto;
+}
+
+.help-search {
+    position: absolute;
+    z-index: 8;
+    top: 0;
+    margin: 50px;
+    padding: 12px;
+    width: 38rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.Help-vanlig {
+    margin: 60px;
+}
+
+.mini-container a {
+    border: solid 1px black;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #383232;
+    padding: 10px;
+    margin: 15px 15px 15px 0px;
+}
+
+
+
+.container {
+    border: solid 1px black;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: calc(25% - 20px);
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.container a {
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #383232;
+    transition: 250ms;
+    padding: 5px;
+}
+
+.h2-help {
+    margin-left: 60px;
+    margin-bottom: 30px;
+}
+
+.container h2 {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+/* Här slutar Help*/
+
+@media screen and (max-width:1018px) {
+
+    .mini-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:970px) {
+
+    .hide-item {
+        display: none !important;
+    }
+    
+    .Hbbtn {
+        display: flex !important;
+    }
+
+    .help-search {
+        width: 70%;
+    }
+
+    .help-container {
+        gap: 10px;
+        flex-flow: row wrap;
+    }
+
+    .container {
+        margin: 0;
+        width: calc(50% - 10px);
+        box-sizing: border-box;
+    }
+
+    .footer-links, .footer-end {
+        flex-direction: column;
+    }
+
+    .footer-containter {
+        margin-bottom: 20px;
+    }
+
+    .footer-end {
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .main-login {
+        margin-left: 30px;
+    }
+
+    .login, .need-acc {
+        margin-left: 0;
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:767px) {
+
+    .hidden-main-links {
+        display: none !important;
+    }
+
+    .show, .active-menu, .hb-meny {
+        flex-direction: column;
+        height: 200vh !important;
+    }
+
+    .main-login {
+        margin-left: 30px;
+        flex-direction: column;
+    }
+
+    .login, .need-acc {
+        width: 80%;
+    }
+
+     #carouselExampleSlidesOnly {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:567px) {
+
+    .container {
+        width: calc(100% - 10px);
+    }
+
+    .footer-end-items {
+        align-items: center;
+        flex-direction: column;
+    }
+}
