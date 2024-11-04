@@ -2,6 +2,7 @@
 @import url('navbar_1.css');
 @import url('burgermenu.css');
 @import url('loader.css');
+@import url('shoppinglist.css');
 
 body {
     margin: 0;
@@ -21,7 +22,7 @@ header {
 }
 
 main {
-    height: 400px;
+    height: 600px;
     width: 100%;
 }
 
